@@ -1,4 +1,4 @@
-public abstract class Classroom  {
+public class Classroom  {
     private Person[] students;
     private Person teacher;
     public Classroom(Person[] students, Person teacher )
