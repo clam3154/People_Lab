@@ -10,10 +10,10 @@ public class Teacher extends Person
     }
     public String getSubject()
     {
-
+        return Subject;
     }
     public String toString()
     {
-        return;
+        return Title + ". " + getFamilyName();
     }
 }
