@@ -9,22 +9,23 @@ public class Classroom  {
 
     public String getSubject(String Subject)
     {
-
+        Subject = Subject;
+        return Subject;
     }
-    public String classAverage()
+    public double classAverage()
     {
-        int totalGPA = 0;
-        for (int i = 0; i < students.length - 1; i++) {
+        double totalGPA = 0;
+        int i = 0;
+        for (i = 0; i < students.length - 1; i++) {
             totalGPA += students[i].GPA ;
         }
+        return totalGPA/i;
     }
 
     public String printClass()
     {
-
-    }
-    public static void main(String[] args)
-    {
-
+        System.out.println(teacher);
+        System.out.println(Subject);
+        System.out.println(students);
     }
 }
