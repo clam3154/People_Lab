@@ -25,10 +25,9 @@ public class Classroom  {
         this.teacher = teacher;
     }
 
-    public String getSubject(String Subject)
+    public String getSubject(String subject)
     {
-        Subject = Subject;
-        return Subject;
+
     }
     public double classAverage()
     {
@@ -43,7 +42,7 @@ public class Classroom  {
     public String printClass()
     {
         System.out.println(teacher);
-        System.out.println(Subject);
+        System.out.println(subject);
         System.out.println(students);
     }
 }
