@@ -1,9 +1,9 @@
 public class Classroom  {
 
-    private Person[] students;
-    private Person teacher;
+    private Student[] students;
+    private Teacher teacher;
 
-    public Classroom(Person[] students, Person teacher )
+    public Classroom(Student[] students, Teacher teacher )
     {
         this.students = students;
         this.teacher = teacher;
@@ -13,7 +13,7 @@ public class Classroom  {
         return students;
     }
 
-    public void setStudents(Person[] students) {
+    public void setStudents(Student[] students) {
         this.students = students;
     }
 
@@ -21,7 +21,7 @@ public class Classroom  {
         return teacher;
     }
 
-    public void setTeacher(Person teacher) {
+    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 
@@ -30,14 +30,18 @@ public class Classroom  {
         Subject = Subject;
         return Subject;
     }
-    public double classAverage()
+
+    public double classAverage(Student[] Student)
     {
-        double totalGPA = 0;
-        int i = 0;
-        for (i = 0; i < students.length - 1; i++) {
-            totalGPA += students[i].GPA;
+        double totalAvg = 0;
+
+        for(int i = 0;i<this.students.length;i++)
+        {
+
+            totalAvg += this.students[i].getGPA();
         }
-        return totalGPA/i;
+
+        return totalAvg/students.length;
     }
 
     public String printClass()
