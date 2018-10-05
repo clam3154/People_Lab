@@ -24,7 +24,7 @@ public class Teacher extends Person
     public void setTitle(String title) {
         Title = title;
     }
-
+    @Override
     public String toString()
     {
         return Title + ". " + getFamilyName();
