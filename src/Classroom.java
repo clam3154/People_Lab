@@ -1,5 +1,3 @@
-import javax.security.auth.Subject;
-
 public class Classroom  {
 
     private Student[] students;
@@ -29,7 +27,7 @@ public class Classroom  {
 
     public String getSubject(String Subject)
     {
-        Subject = Subject;
+        Subject = teacher.getSubject();
         return Subject;
     }
 
@@ -46,10 +44,10 @@ public class Classroom  {
         return totalAvg/students.length;
     }
 
-    public String printClass()
+    public void printClass()
     {
         System.out.println(teacher);
-        System.out.println(Subject);
+        System.out.println(teacher.getSubject());
         System.out.println(students);
     }
 }
