@@ -1,3 +1,5 @@
+import javax.security.auth.Subject;
+
 public class Classroom  {
 
     private Student[] students;
@@ -25,9 +27,10 @@ public class Classroom  {
         this.teacher = teacher;
     }
 
-    public String getSubject(String subject)
+    public String getSubject(String Subject)
     {
-
+        Subject = Subject;
+        return Subject;
     }
 
     public double classAverage(Student[] Student)
@@ -46,7 +49,7 @@ public class Classroom  {
     public String printClass()
     {
         System.out.println(teacher);
-        System.out.println(subject);
+        System.out.println(Subject);
         System.out.println(students);
     }
 }
