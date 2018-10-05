@@ -1,4 +1,4 @@
-public abstract class Person
+public class Person
 {
     private String firstName, familyName;
     public Person(String firstName, String familyName)
@@ -6,7 +6,6 @@ public abstract class Person
         this.firstName = firstName;
         this.familyName = familyName;
     }
-    public abstract String toString();
     public String getFirstName()
     {
         return firstName;
@@ -25,7 +24,8 @@ public abstract class Person
     }
     public boolean equals(Person person)
     {
-        if(this.firstName.equals(person.getFirstName()) && this.familyName.equals(person.getFamilyName()))
+        if(this.firstName.equals(person.getFirstName()) &&
+                this.familyName.equals(person.getFamilyName()))
         {
             return true;
         }
