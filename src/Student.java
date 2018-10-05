@@ -17,12 +17,24 @@ public class Student extends Person{
         return GPA;
     }
 
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+
     public String getMajor() {
         return major;
     }
 
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
     public String getClubs() {
         return clubs;
+    }
+
+    public void setClubs(String clubs) {
+        this.clubs = clubs;
     }
 
     @Override
