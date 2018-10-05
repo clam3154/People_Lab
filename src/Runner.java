@@ -11,11 +11,7 @@ public class Runner {
 
     public String randomStudent(String[] students)
     {
-        for(int i = 0; i < 10; i++)
-        {
-            students[i] = firstNames[(int) (Math.random() * 12)];
-            students[i] = familyNames[(int) (Math.random() * 6)];
-            students[i] = majors[(int) (Math.random() * 11)];
-        }
-    }
+            System.out.println(firstNames[(int) (Math.random() * 12)] + " " + familyNames[(int) (Math.random() * 6)] + " " + majors[(int) (Math.random() * 11)]);
+            return (firstNames[(int) (Math.random() * 12)] + " " + familyNames[(int) (Math.random() * 6)] + " " + majors[(int) (Math.random() * 11)]);
+}
 }
